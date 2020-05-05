@@ -28,10 +28,12 @@
     
     <br>
     
-    <ul id="msgList">
-        {{#each msgs as |m|}}
-        <li>{{m.from}}: {{m.message}}</li>
-        {{/each}}
-    </ul>
+    <div class="container">
+        <ul id="msgList">
+            {{#each msgs as |m|}}
+            <li>{{m.from}}: {{m.message}}</li>
+            {{/each}}
+        </ul>
+    </div>
 </body>
 </html>
