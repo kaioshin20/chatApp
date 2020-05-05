@@ -11,17 +11,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="display-4 text-center">Welcome <span id="username">{{username}}</span>, lets chat !</h1>
-    <large class="form-text text-muted text-center">Please mention username of receiver in your text as @username</large>
-    
+    <div id="top" class="shadow">
+        <h1 class="display-4 text-center">Welcome <span id="username">{{username}}</span>, lets chat !</h1>
+        <large class="form-text text-muted text-center">Please mention username of receiver in your text as @username. Eg: Hi @xyz how are you ?</large>
     <hr>
+    </div>
+
+    <br>
+
+    <div class="container text-center">
+        <a id="userbtn" href="/users"><button class="btn btn-info" type="button">Registered Users</button></a>
+        <a href="/signout"><button class="btn btn-danger" type="button">Logout</button></a>
+    </div>
+
+    <br>
 
     <div class="text-center container">
         <div class="input-group">
         <input type="text" id="chatinput" class="form-control" placeholder="Type a message" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
         <div class="input-group-append" id="button-addon4">
             <button id="sendbutton" class="btn btn-success" type="button">Send</button>
-            <a href="/signout"><button class="btn btn-danger" type="button">Logout</button></a>
         </div>
         </div>
     </div>

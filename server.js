@@ -31,7 +31,7 @@ function checkLogin(req, res, next) {
         return next()
     }
     else {
-        res.send('<h1>Error 403</h1><h3>Login First!!<h3>')
+        res.send('<h1>Error 403</h1><h3>Login First from <a href="/login">here</a><h3>')
     }
 }
 
@@ -81,6 +81,18 @@ svr.post('/login', passport.authenticate('local', {
 svr.get('/signout', (req, res) => {
     req.logout()
     res.redirect('/login')
+})
+
+//middleware to get a list of users
+svr.get('/users', (req, res) => {
+    connectdb('chatApp')
+        .then(db => db.collection('users').find())
+        .then(users => users.toArray())
+        .then((users) => res.render('users', {users: users}))
+        .catch(err => {
+            console.log(err)
+            res.send(err)
+        })
 })
 
 //socketio implementation for realtime chat

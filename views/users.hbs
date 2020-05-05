@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Users</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top" class="shadow">
+        <h1 class="display-4 text-center">Registered Users</h1>
+        <large class="form-text text-muted text-center">You can use these usernames to chat with them. Eg: Hi @username how are you ?</large>
+    <hr>
+    </div>
+
+    <br>
+
+    <div class="container text-center">
+        <a href="javascript:history.back()"><button class="btn btn-outline-primary" type="button">Back</button></a>
+    </div>
+
+    <br>
+
+    <div class="container text-center">
+        <ul id="msgList">
+            {{#each users as |u|}}
+            <li>{{u.username}}</li>
+            {{/each}}
+        </ul>
+    </div>    
+</body>
+</html>

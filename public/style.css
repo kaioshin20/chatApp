@@ -4,9 +4,13 @@ ul {
 
 li {
     padding: 5px 10px;
-    border: 1.5px solid #cccccc;
-    background-color: #e4e4e4;
+    border: 1.5px solid rgb(216, 216, 216);
+    background-color: rgb(233, 233, 233);
     width: max-content;
     border-radius: 50px;
     margin: 5px;
+}
+
+#top {
+    background-color: #dae9ff;
 }
