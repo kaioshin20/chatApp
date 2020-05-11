@@ -97,6 +97,7 @@ svr.get('/users', (req, res) => {
 
 //socketio implementation for realtime chat
 io.on('connection', (socket)=>{
+    console.log(socket);
     socket.on('chatsend', (data)=>{
         const newMsg={
             from: data.from,

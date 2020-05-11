@@ -10,7 +10,20 @@ li {
     border-radius: 50px;
     margin: 5px;
 }
-
+/* 
 #top {
     background-color: #dae9ff;
+} */
+
+#chatInput{
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+}
+
+#msgs{
+    position: relative;
+    height: 500px;
+    overflow-y: scroll;
+    background-image: url('./assets/wallpaper.jpg');
 }
