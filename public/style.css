@@ -25,5 +25,5 @@ li {
     position: relative;
     height: 500px;
     overflow-y: scroll;
-    background-image: url('./assets/wallpaper.jpg');
+    background-image: url('./assets/wallpaper-dark.jpg');
 }
