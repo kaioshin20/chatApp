@@ -10,20 +10,32 @@ li {
     border-radius: 50px;
     margin: 5px;
 }
-/* 
-#top {
-    background-color: #dae9ff;
-} */
 
 #chatInput{
     position: sticky;
     bottom: 0px;
-    width: 100%;
+    background: #4ca1af; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca1af, #c4e0e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca1af, #c4e0e5);
+}
+
+#navTop{ 
+    background: #4ca1af; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca1af, #c4e0e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca1af, #c4e0e5);
 }
 
 #msgs{
     position: relative;
-    height: 500px;
+    height: 600px;
     overflow-y: scroll;
-    background-image: url('./assets/wallpaper-dark.jpg');
+    background-image: url('./assets/wallpaper.jpg');
+}
+
+div#top.list-group{
+    margin: 0px;
+}
+
+div.list-group{
+    margin: 0px;
 }
